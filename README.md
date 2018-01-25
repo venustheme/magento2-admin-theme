@@ -4,8 +4,6 @@ Are you looking for a tool to better your Magento Store Management? But it still
 
 Are you looking for a tool to better your Magento Store Management? But it still exists some complicated issues at the backend. By the way, let our Magento 2 Admin Theme help you. It gives your Magento Admin a facelift and improves admin theme and makes it better and more user-friendly.
 
-![admin theme configuration](https://landofcoder.com/media/resized/553x339/wysiwyg/extensions/admintheme/admin1.jpg)
-
 ## 1. Documentation
 
 - Installation guide: https://blog.landofcoder.com/magento-2-install-extension/
