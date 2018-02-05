@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Venustheme
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Venustheme.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.venustheme.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   Venustheme
+ * @package    Ves_Themesettings
+ * @copyright  Copyright (c) 2014 Venustheme (http://www.venustheme.com/)
+ * @license    http://www.venustheme.com/LICENSE-1.0.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+	<system>
+		<section id="ves_backend_general" translate="label" type="text" sortOrder="550" showInDefault="1" showInWebsite="1" showInStore="1">
+			<class>separator-top</class>
+			<label>Backend</label>
+			<tab>vesalltab</tab>
+			<resource>Ves_Backend::configuration</resource>
+			<group id="general_settings" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>General Settings</label>
+				<field id="skin" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Skins</label>
+					<source_model>Ves\Backend\Model\System\Config\Source\General\Skins</source_model>
+				</field>
+				<field id="bg_login_page" translate="label" type="image" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Background Login Page</label>
+					<backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
+					<upload_dir config="system/filesystem/media" scope_info="1">ves/backend/images</upload_dir>
+					<base_url type="media" scope_info="1">ves/backend/images</base_url>
+					<comment><![CDATA[Allowed file types: jpeg, gif, png.]]></comment>
+				</field>
+				<field id="use_image_for_toolbar" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Use Image For Toolbar</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="toolbar_image" translate="label" type="image" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Toolbar Image</label>
+					<backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
+					<upload_dir config="system/filesystem/media" scope_info="1">ves/themesettings/images</upload_dir>
+					<base_url type="media" scope_info="1">ves/themesettings/images</base_url>
+					<depends><field id="use_image_for_toolbar">1</field></depends>
+					<comment><![CDATA[Allowed file types: jpeg, png.]]></comment>
+				</field>
+				<!-- <field id="toolbar_color" translate="label comment" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Toolbar Color</label>
+					<frontend_model>Ves\Backend\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
+					<depends><field id="use_image_for_toolbar">0</field></depends>
+					<comment><![CDATA[Background color of the web browser viewport (applied for HTML body element). Set the same color as for footer background to avoid blank space below the footer on large screens.]]></comment>
+				</field> -->
+			</group>
+			<group id="custom_code" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Custom CSS Code</label>
+				<field id="custom_css" translate="label comment" type="textarea" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Custom CSS</label>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

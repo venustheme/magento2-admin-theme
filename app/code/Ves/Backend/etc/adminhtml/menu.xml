@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Venustheme
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Venustheme.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.venustheme.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   Venustheme
+ * @package    Ves_Backend
+ * @copyright  Copyright (c) 2014 Venustheme (http://www.venustheme.com/)
+ * @license    http://www.venustheme.com/LICENSE-1.0.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+	<menu>
+		<add id="Ves_Backend::settings" title="Ves Backend" module="Ves_Backend" sortOrder="300" parent="Ves_All::ves_all" resource="Ves_Backend::configuration"/>
+		<add id="Ves_Backend::general_settings" title="General Settings" module="Ves_Backend" sortOrder="302" parent="Ves_Backend::settings" action="adminhtml/system_config/edit/section/ves_backend_general" resource="Ves_Backend::configuration"/>
+	</menu>
+</config>

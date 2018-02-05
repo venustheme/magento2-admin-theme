@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<css src="Ves_Backend::css/styles.css" order="102"/>
+		<css src="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" src_type="url"/>
+	</head>
+	<!-- <body>
+		 <referenceContainer name="after.body.start">
+		 	<block class="Ves\Backend\Block\Adminhtml\Html\Head" name="ves.backend.head"></block>
+		 </referenceContainer>
+	</body> -->
+</page>

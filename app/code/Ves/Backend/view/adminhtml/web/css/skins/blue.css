@@ -1,0 +1,170 @@
+body.page-layout-admin-login {
+  background-color: #fff;
+  position: relative;
+  background-image: url(../images/bg-login-admin.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.page-layout-admin-login .page-wrapper { box-shadow: none;}
+.page-layout-admin-login .login-header { text-align: center; border-bottom: 1px solid #d7dee7; padding-bottom: 10px;}
+.page-layout-admin-login .login-header img { width: 129px; height: 32px;}
+.page-layout-admin-login .admin__legend { color: #000;}
+.page-layout-admin-login .admin__field > .admin__field-label { display: none !important;}
+.page-layout-admin-login .admin__field .admin__field-control input{
+    background: #d7dee7;
+    border:0;
+    border-left:2px solid #d7dee7;
+    padding-left:55px;
+    height: 45px;
+}
+.page-layout-admin-login .admin__field .admin__field-control input:hover,
+.page-layout-admin-login .admin__field .admin__field-control input:focus,
+.page-layout-admin-login .admin__field .admin__field-control input:active,
+.page-layout-admin-login .admin__field .admin__field-control input:-webkit-autofill{
+    background-color: #d7dee7 !important;
+    border-left:2px solid #eb5202!important;
+}
+.page-layout-admin-login .admin__field .admin__field-control{ position: relative;}
+.page-layout-admin-login .admin__field .admin__field-control:before {
+    color: #b5c0ce;
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0;
+    width: 55px;
+    line-height: 45px;
+    text-align: center;
+}
+.page-layout-admin-login .admin__field.field-username .admin__field-control:before {content: "\f007";}
+.page-layout-admin-login .admin__field.field-password .admin__field-control:before {content: "\f084";}
+.adminhtml-auth-login .form-actions { width: 100%;}
+.adminhtml-auth-login .form-actions .actions { float: left; padding-top: 15px;}
+.adminhtml-auth-login .form-actions .links { float: right; text-align: right; padding-top:30px}
+.adminhtml-auth-login .form-actions .links a { color: #000;}
+.page-layout-admin-login button {border-radius: 5px;}
+
+.page-header .admin-user .admin__action-dropdown:before { border:1px solid #fff; background: #fff; color: #000; border-radius: 50%;}
+
+
+.menu-wrapper .logo { background: #03a9f3; height:7.9rem;}
+.admin__menu { margin-top:30px;}
+
+.menu-wrapper { background: #fff;}
+.menu-wrapper:before { background: #fff; box-shadow:0 5px 30px 0 #e9e9e9; top:7.9rem !important; }
+
+.admin__menu .level-0 > .submenu {background: #f5f5f5;}
+.admin__menu .level-0 > a { border-left:3px solid #fff;}
+.admin__menu .level-0 > a:hover,
+.admin__menu .level-0._active > a {
+    border-left:3px solid #03a9f3;
+    background: #f5f5f5;
+    color: #000;
+}
+.admin__menu .submenu a{ color: #000; }
+.admin__menu .level-0 > a:hover:before,
+.admin__menu .level-0._active > a:before {color: #03a9f3;}
+.admin__menu .level-0._show > .submenu { padding: 0;}
+.admin__menu .submenu-title {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: #03a9f3;
+    height: 7.9rem;
+    padding-top: 20px;
+    padding-left: 3rem;
+}
+.admin__menu .action-close:before { color: #fff;}
+.admin__menu .level-0 > a,
+.admin__menu .submenu .parent > a, 
+.admin__menu .submenu .parent .submenu-group-title { color: #000;}
+
+.admin__menu [class*='level-']:not(.level-0) a:hover,
+.admin__menu [class*='level-']:not(.level-0) a:active {background: transparent; color:#03a9f3;}
+
+.page-wrapper{background:#f5f5f5;}
+.page-header {background: #03a9f3; color:#fff;}
+.page-header .page-title {color:#fff;}
+.page-header .admin__action-dropdown { background: transparent;color:#000;}
+.page-header .search-global-label:before,
+.page-header .notifications-action,
+.page-header .admin-user .admin__action-dropdown:before{ color: #fff;}
+
+.page-actions-buttons .action-primary {
+  background: #03a9f3;
+  border-color:#03a9f3;
+  border-radius:3px;
+}
+
+.dashboard-item,
+.dashboard-diagram-container,
+.dashboard-totals {
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.dashboard-item-title {color: #000; margin-bottom: 15px;font-size: 16px;}
+
+.dashboard-secondary .dashboard-item.dashboard-item-primary {
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.dashboard-secondary .dashboard-item.dashboard-item-primary .dashboard-item-title { background: none; padding:0;color: #000;}
+.dashboard-secondary .dashboard-item.dashboard-item-primary .dashboard-item-content {padding: 0;}
+
+
+.dashboard-secondary .dashboard-item { padding:0}
+.dashboard-secondary .dashboard-item .dashboard-item-title { background: #59616c; padding: 20px; color: #fff;
+  border-top-left-radius: 5px; border-top-right-radius: 5px;}
+.dashboard-secondary .dashboard-item .dashboard-item-content { padding: 20px;}
+
+
+.dashboard-totals { margin: 2rem 0;}
+.dashboard-totals-list {}
+.dashboard-totals-list .dashboard-totals-item { 
+    background-color: #70c1b3;
+    background-image: url(../images/bg_icon_01.jpg);
+   background-repeat: no-repeat;
+    background-position: bottom right;
+    margin-right: 2rem;
+    width: 23%;
+    float: left;
+    padding: 20px;
+    color: #fff;
+    border-radius: 3px;
+}
+.dashboard-totals-list .dashboard-totals-item + li {
+    background-color: #ab8ce4;
+    background-image: url(../images/bg_icon_02.jpg);
+}
+
+.dashboard-totals-list .dashboard-totals-item + li + li {
+    background-color: #03a9f3;
+    background-image: url(../images/bg_icon_03.jpg);
+}
+
+.dashboard-totals-list .dashboard-totals-item + li + li + li {
+    background-color: #ea5a5a;
+    background-image: url(../images/bg_icon_04.jpg);
+}
+
+.dashboard-totals-list .dashboard-totals-item span.dashboard-totals-label { color: #fff; text-transform: uppercase;}
+.dashboard-totals-list .dashboard-totals-item strong {color: #fff; font-size: 30px;}
+
+.dashboard-store-stats{}
+.dashboard-store-stats .tabs-horiz { background: #e9eef1;}
+.dashboard-store-stats .tabs-horiz .ui-state-default { background: transparent; border-color:#e9eef1;}
+.dashboard-store-stats .tabs-horiz .ui-state-active .ui-tabs-anchor {background: #fff;color:#03a9f3;border-top-color:#fff;}
+.dashboard-store-stats .dashboard-store-stats-content {
+  border-top:0 !important;
+  border: 1px solid #e3e3e3;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #fff;
+}
+
+.dashboard-store-stats .dashboard-store-stats-content .ui-tabs-panel {padding-left:0;padding-right:0;}
+.dashboard-store-stats .dashboard-store-stats-content .ui-tabs-panel .dashboard-item-content { padding: 20px 30px;}
