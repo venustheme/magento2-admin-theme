@@ -14,8 +14,8 @@
  * version in the future.
  * 
  * @category   Venustheme
- * @package    Ves_Themesettings
- * @copyright  Copyright (c) 2014 Venustheme (http://www.venustheme.com/)
+ * @package    Ves_Backend
+ * @copyright  Copyright (c) 2018 Venustheme (http://www.venustheme.com/)
  * @license    http://www.venustheme.com/LICENSE-1.0.html
  */
 namespace Ves\Backend\Block\Adminhtml\Html;
@@ -33,7 +33,7 @@ class Head extends \Magento\Backend\Block\Template
 	public function __construct(
 		\Magento\Backend\Block\Template\Context $context,
 		ResolverInterface $locale,
-		\Ves\Themesettings\Helper\Theme $ves,
+		\Ves\Backend\Helper\Theme $ves,
 		array $data = []
 		){
 		parent::__construct($context, $data);
