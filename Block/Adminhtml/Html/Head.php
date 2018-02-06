@@ -30,15 +30,10 @@ class Head extends \Magento\Backend\Block\Template
 
 	protected $_locale;
 
-	/**
-	 * @param \Magento\Framework\View\Element\Template\Context                   $context          
-	 * @param \Ves\Themesettings\Model\System\Config\Source\Css\Font\GoogleFonts $_googleFontModel 
-	 * @param \Ves\Themesettings\Helper\Theme                                    $ves              
-	 * @param array                                                              $data             
-	 */
 	public function __construct(
 		\Magento\Backend\Block\Template\Context $context,
 		ResolverInterface $locale,
+		\Ves\Themesettings\Helper\Theme $ves,
 		array $data = []
 		){
 		parent::__construct($context, $data);
