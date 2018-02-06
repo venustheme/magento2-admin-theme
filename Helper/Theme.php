@@ -47,9 +47,7 @@ class Theme extends \Magento\Framework\App\Helper\AbstractHelper
      * @var CookieManagerInterface
      */
     protected $cookieManager;
-    /**
-     * @var \Ves\Themesettings\Helper\Data
-     */
+
     protected $helperData;
 
     /**
